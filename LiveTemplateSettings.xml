@@ -1,0 +1,275 @@
+<TemplatesExport family="Live Templates">
+  <Template uid="59cb85d5-4ae5-467c-870e-9ed0d9710e97" shortcut="fc" description="" text="[TestFixture]&#xD;&#xA;public class $FIXTURENAME$ : ControllerTester&lt;$CONTROLLER$, $VIEWMODEL$, ActionResult&gt;&#xD;&#xA;{&#xD;&#xA;	public $CONSTRUCTOR$()&#xD;&#xA;        : base((c,i) =&gt; c.$ACTION$(i))&#xD;&#xA;    {&#xD;&#xA;            &#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    protected override void beforeEach()&#xD;&#xA;    {&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;	&#xD;&#xA;	[Test]&#xD;&#xA;	public void $TEST$()&#xD;&#xA;	{&#xD;&#xA;	  $END$&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="FIXTURENAME" expression="" initialRange="0" />
+      <Variable name="CONTROLLER" expression="AspMvcController()" initialRange="0" />
+      <Variable name="VIEWMODEL" expression="complete()" initialRange="0" />
+      <Variable name="CONSTRUCTOR" expression="typeName()" initialRange="-1" />
+      <Variable name="ACTION" expression="AspMvcAction()" initialRange="0" />
+      <Variable name="TEST" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="7d63b223-9b4d-43f4-8a11-374b6f2ffaa3" shortcut="fpcf" description="full public class fixture" text="[TestFixture]&#xD;&#xA;public class $FIXTURENAME$&#xD;&#xA;{&#xD;&#xA;&#xD;&#xA;	[SetUp]&#xD;&#xA;	public void Setup()&#xD;&#xA;	{&#xD;&#xA;	&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;	[Test]&#xD;&#xA;	public void $TEST$()&#xD;&#xA;	{&#xD;&#xA;	  $END$&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="FIXTURENAME" expression="suggestVariableName()" initialRange="0" />
+      <Variable name="TEST" expression="suggestVariableName()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="cfa69b90-f403-49a5-a092-3c1bc40a72f3" shortcut="pcf" description="public class fixture" text="[TestFixture]&#xD;&#xA;public class $FIXTURENAME$&#xD;&#xA;{&#xD;&#xA;  $END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="FIXTURENAME" expression="suggestVariableName()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="ebaef804-d34f-4873-9105-81fd0ebdc209" shortcut="pvs" description="public class setup" text="[SetUp]&#xD;&#xA;public void Setup()&#xD;&#xA;{&#xD;&#xA;  $END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="f73ff3b8-c4fa-43f5-9beb-9efe6d62a53c" shortcut="pvt" description="public void test" text="[Test]&#xD;&#xA;public void $TESTNAME$()&#xD;&#xA;{&#xD;&#xA;  $END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="TESTNAME" expression="suggestVariableName()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="1e88ed4a-93b1-46ed-95df-a8355196c78d" shortcut="nea" description="New Empty Array" text="new[] {$END$}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="d1e02864-dd2e-47ff-b86c-be5571e478c0" shortcut="neq" description="New Empty Quearable" text="new[]{$END$}.AsQuerable()" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="f78456ca-a989-4e8c-b9b6-5bae23462d2e" shortcut="vprop" description="virual prop" text="public virtual $TYPE$ $NAME$ { get; set; }" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories />
+    <Variables>
+      <Variable name="TYPE" expression="" initialRange="0" />
+      <Variable name="NAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="59cb85d5-4ae5-467c-870e-9ed0d9710e97" shortcut="fc" description="" text="[TestFixture]&#xD;&#xA;public class $FIXTURENAME$ : ControllerTester&lt;$CONTROLLER$, $VIEWMODEL$, ActionResult&gt;&#xD;&#xA;{&#xD;&#xA;	public $CONSTRUCTOR$()&#xD;&#xA;        : base((c,i) =&gt; c.$ACTION$(i))&#xD;&#xA;    {&#xD;&#xA;            &#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    protected override void beforeEach()&#xD;&#xA;    {&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;	&#xD;&#xA;	[Test]&#xD;&#xA;	public void $TEST$()&#xD;&#xA;	{&#xD;&#xA;	  $END$&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="FIXTURENAME" expression="" initialRange="0" />
+      <Variable name="CONTROLLER" expression="AspMvcController()" initialRange="0" />
+      <Variable name="VIEWMODEL" expression="complete()" initialRange="0" />
+      <Variable name="CONSTRUCTOR" expression="typeName()" initialRange="-1" />
+      <Variable name="ACTION" expression="AspMvcAction()" initialRange="0" />
+      <Variable name="TEST" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="7d63b223-9b4d-43f4-8a11-374b6f2ffaa3" shortcut="fpcf" description="full public class fixture" text="[TestFixture]&#xD;&#xA;public class $FIXTURENAME$&#xD;&#xA;{&#xD;&#xA;&#xD;&#xA;	[SetUp]&#xD;&#xA;	public void Setup()&#xD;&#xA;	{&#xD;&#xA;	&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;	[Test]&#xD;&#xA;	public void $TEST$()&#xD;&#xA;	{&#xD;&#xA;	  $END$&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="FIXTURENAME" expression="suggestVariableName()" initialRange="0" />
+      <Variable name="TEST" expression="suggestVariableName()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="cfa69b90-f403-49a5-a092-3c1bc40a72f3" shortcut="pcf" description="public class fixture" text="[TestFixture]&#xD;&#xA;public class $FIXTURENAME$&#xD;&#xA;{&#xD;&#xA;  $END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="FIXTURENAME" expression="suggestVariableName()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="ebaef804-d34f-4873-9105-81fd0ebdc209" shortcut="pvs" description="public class setup" text="[SetUp]&#xD;&#xA;public void Setup()&#xD;&#xA;{&#xD;&#xA;  $END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="f73ff3b8-c4fa-43f5-9beb-9efe6d62a53c" shortcut="pvt" description="public void test" text="[Test]&#xD;&#xA;public void $TESTNAME$()&#xD;&#xA;{&#xD;&#xA;  $END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="TESTNAME" expression="suggestVariableName()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="1e88ed4a-93b1-46ed-95df-a8355196c78d" shortcut="nea" description="New Empty Array" text="new[] {$END$}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="d1e02864-dd2e-47ff-b86c-be5571e478c0" shortcut="neq" description="New Empty Quearable" text="new[]{$END$}.AsQuerable()" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="f78456ca-a989-4e8c-b9b6-5bae23462d2e" shortcut="vprop" description="virual prop" text="public virtual $TYPE$ $NAME$ { get; set; }" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories />
+    <Variables>
+      <Variable name="TYPE" expression="" initialRange="0" />
+      <Variable name="NAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="59cb85d5-4ae5-467c-870e-9ed0d9710e97" shortcut="fc" description="" text="[TestFixture]&#xD;&#xA;public class $FIXTURENAME$ : ControllerTester&lt;$CONTROLLER$, $VIEWMODEL$, ActionResult&gt;&#xD;&#xA;{&#xD;&#xA;	public $CONSTRUCTOR$()&#xD;&#xA;        : base((c,i) =&gt; c.$ACTION$(i))&#xD;&#xA;    {&#xD;&#xA;            &#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    protected override void beforeEach()&#xD;&#xA;    {&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;	&#xD;&#xA;	[Test]&#xD;&#xA;	public void $TEST$()&#xD;&#xA;	{&#xD;&#xA;	  $END$&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="FIXTURENAME" expression="" initialRange="0" />
+      <Variable name="CONTROLLER" expression="AspMvcController()" initialRange="0" />
+      <Variable name="VIEWMODEL" expression="complete()" initialRange="0" />
+      <Variable name="CONSTRUCTOR" expression="typeName()" initialRange="-1" />
+      <Variable name="ACTION" expression="AspMvcAction()" initialRange="0" />
+      <Variable name="TEST" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="7d63b223-9b4d-43f4-8a11-374b6f2ffaa3" shortcut="fpcf" description="full public class fixture" text="[TestFixture]&#xD;&#xA;public class $FIXTURENAME$&#xD;&#xA;{&#xD;&#xA;&#xD;&#xA;	[SetUp]&#xD;&#xA;	public void Setup()&#xD;&#xA;	{&#xD;&#xA;	&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;	[Test]&#xD;&#xA;	public void $TEST$()&#xD;&#xA;	{&#xD;&#xA;	  $END$&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="FIXTURENAME" expression="suggestVariableName()" initialRange="0" />
+      <Variable name="TEST" expression="suggestVariableName()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="cfa69b90-f403-49a5-a092-3c1bc40a72f3" shortcut="pcf" description="public class fixture" text="[TestFixture]&#xD;&#xA;public class $FIXTURENAME$&#xD;&#xA;{&#xD;&#xA;  $END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="FIXTURENAME" expression="suggestVariableName()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="ebaef804-d34f-4873-9105-81fd0ebdc209" shortcut="pvs" description="public class setup" text="[SetUp]&#xD;&#xA;public void Setup()&#xD;&#xA;{&#xD;&#xA;  $END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="f73ff3b8-c4fa-43f5-9beb-9efe6d62a53c" shortcut="pvt" description="public void test" text="[Test]&#xD;&#xA;public void $TESTNAME$()&#xD;&#xA;{&#xD;&#xA;  $END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories>
+      <Category name="Testing" />
+    </Categories>
+    <Variables>
+      <Variable name="TESTNAME" expression="suggestVariableName()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="1e88ed4a-93b1-46ed-95df-a8355196c78d" shortcut="nea" description="New Empty Array" text="new[] {$END$}" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="d1e02864-dd2e-47ff-b86c-be5571e478c0" shortcut="neq" description="New Empty Quearable" text="new[]{$END$}.AsQueryable()" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="f78456ca-a989-4e8c-b9b6-5bae23462d2e" shortcut="vprop" description="virual prop" text="public virtual $TYPE$ $NAME$ { get; set; }" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories />
+    <Variables>
+      <Variable name="TYPE" expression="" initialRange="0" />
+      <Variable name="NAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>
